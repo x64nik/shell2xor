@@ -25,7 +25,7 @@ def xor(data, key):
 	x = map(ord, key)
 	keyAsInt = list(x)
 	return bytes(bytearray(( (data[i] ^ keyAsInt[i % l]) for i in range(0,len(data)) )))
-#file stuff
+
 def file_in(shellcodeFile):
 	try:
 		with open(shellcodeFile, 'rb') as shellcodeFileHandle:
